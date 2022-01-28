@@ -4,7 +4,7 @@ session_start();
 
 // データベース接続
 try{
-    $pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root","");
+    $pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root","mysql");
 }catch(PDOException $e){
     die(
         "<p>申し訳ございません。現在サーバーが混み合っており一時的にアクセスが出来ません。<br>しばらくしてから再度ログインをしてください。</p><a href='http://localhost/login_mypage/login.php'>ログイン画面へ</a>"

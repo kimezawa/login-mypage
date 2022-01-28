@@ -2,7 +2,7 @@
 mb_internal_encoding("utf8");
 
 // データベース接続
-$pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root","");
+$pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root","mysql");
 
 // プリペアードステートメント
 $stmt = $pdo -> prepare("insert into login_mypage(name,mail,password,picture,comments) values(?,?,?,?,?);");
